@@ -82,7 +82,22 @@
                 else
                 {
                     draw += 1;
+                    if (draw == 3)
+                    {
+                        DrawStage(draw);
+                        Console.WriteLine(displayWord);
+                        Console.WriteLine("You have no more guesses left. Game over");
+                        done = true;
+                    }
+                }
 
+                if (displayWord == "COMPUTER")
+                {
+                    DrawStage(draw);
+                    Console.WriteLine(displayWord);
+                    Console.WriteLine("Congratulations! You guessed the word!");
+                    Console.WriteLine($"You guessed wrong a total of {draw} times");
+                    done = true;
                 }
                       
                 
