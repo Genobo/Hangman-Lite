@@ -87,6 +87,7 @@
                         DrawStage(draw);
                         Console.WriteLine(displayWord);
                         Console.WriteLine("You have no more guesses left. Game over");
+                        Console.WriteLine($"You guessed wrong a total of {draw} times");
                         done = true;
                     }
                 }
